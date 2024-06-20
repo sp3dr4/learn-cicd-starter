@@ -3,6 +3,7 @@ package main
 import (
 	"database/sql"
 	"embed"
+	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -19,6 +20,10 @@ import (
 
 type apiConfig struct {
 	DB *database.Queries
+}
+
+func unused() {
+	fmt.Printf("hey")
 }
 
 //go:embed static/*
